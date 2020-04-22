@@ -13,3 +13,8 @@ curl --location --request POST 'http://localhost:8080/uploadFile' \
 --form 'file=@/Users/<file.ext>'
 
 curl --location --request GET 'http://localhost:8080/downloadFile/<file.ext>'
+
+DEBUG:
+uncomment logger level in application.properties.    line:1: logging.level.root=DEBUG
+Update available port:                  line: 10: server.port=8080
+change file sizes as required           line:4-8
